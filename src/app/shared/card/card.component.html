@@ -1,0 +1,21 @@
+<div class="buscador">
+    <input class="box-buscador" type="text" placeholder="Buscar películas o series">
+  </div>
+  
+  <div class="Tab">
+    <ul class="menuTab">
+      <li><button class="button" (click)="setSelectedCategory('todos')">Todos</button></li>
+      <li><button class="button" (click)="setSelectedCategory('peliculas')">Peliculas</button></li>
+      <li><button class="button" (click)="setSelectedCategory('series')">Series</button></li>
+    </ul>
+  </div>
+  
+  <section class="section">
+    <div class="card" *ngFor="let card of arrayInfoCards">
+      <div *ngIf="selectedCategory === 'Todos' || selectedCategory === card.category">
+        <p>{{card.point}}</p>
+        <img [src]="card.urlImg" alt="">
+        <h2>{{card.name}}</h2>
+      </div>
+    </div>
+  </section>

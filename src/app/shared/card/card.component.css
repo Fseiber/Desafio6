@@ -1,0 +1,91 @@
+.buscador { /* SECTOR DEL BUSCADOR*/
+    padding: 10px 10px 10px 100px;
+    background-color: #121829; 
+  }
+  
+  .box-buscador{
+    width: Fill (344px);
+    height: Hug (64px);
+    padding: 12px, 16px, 12px, 26px;
+    border-radius: 12px;
+    border: 1px;
+    gap: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))  linear-gradient(0deg, #323B54, #323B54);
+    border: 1px solid #323B54;  
+  }
+  
+  .section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; 
+      background-color: #121829;
+  }
+    
+  .card{
+    margin: auto;
+    width: Fixed (282px);
+    height: Hug (480px);
+    padding: 8px, 8px, 16px, 8px;
+    border-radius: 12px;
+    gap: 16px;
+    background-color: #20283E;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  img {
+    width: 266px;
+    height: 400px;
+    border-radius: 8px;
+  }
+  
+  h2{
+    color: #EBEEF5;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  
+  p{
+    color: #FFAD49;
+  }
+  
+  
+  /* BOTON SELECTOR PELI, SERIE, TODO*/
+  
+  .Tab {
+    display: inline-block;
+    background-color: #121829;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  
+  .menuTab {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menuTab li {
+    display: inline;
+    margin-right: 15px; /* Espacio medio entre botones */
+  }
+  
+  .button {
+    background-color: #121829;
+    color: rgba(255, 255, 255, 0.8); 
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, text-decoration 0.3s;
+    padding: 10px 10px 10px 10px;     /*Arriba, derecha, abajo, izquierda */
+    align-items: flex-start;
+    padding-left: 10px;
+    margin-left: 60px;
+  }
+  
+  .button:hover {
+    background-color: #445a8f; /* Color de fondo mas claro en hover */
+    text-decoration: underline; /* Texto subrayado en hover */
+  }

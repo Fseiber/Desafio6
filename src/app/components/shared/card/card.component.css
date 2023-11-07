@@ -1,0 +1,21 @@
+.card-custom {
+    width: 280px;
+    height: 480px;
+    background-color: #20283ECC;
+}
+img {
+    width: 265px;
+    height: 100%;
+    object-fit: cover;
+}
+.text-title-custom {
+    font-size: 16px;
+    color: #EBEEF5;
+}
+.container-img {
+    height: 85%;
+}
+
+.container-text {
+    height: 15%;
+}

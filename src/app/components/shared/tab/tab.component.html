@@ -1,0 +1,6 @@
+<div class="p-2 d-flex align-items-center container-buttons rounded-3">
+    <button *ngFor="let opt of options" class="py-2 px-4 rounded-3" [ngClass]="{'active': opt.value === active}"
+        (click)="selectOption(opt)"> {{opt.label}}
+    </button>
+    <!-- generamos los botones de acuerdo al valor recibido por el componente padre, si algun botón cumple la condición de ser igual al valor del tab activo, le aplica la clase correspondiente. También cada vez que aprieten un botón se enviará el valor en cuestión al componente padre para actualizar los datos -->
+</div>

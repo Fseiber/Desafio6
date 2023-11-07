@@ -1,0 +1,16 @@
+button {
+    font-size: 16px;
+    color: #8E95A9;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    border: none
+}
+.active {
+    background-color: #7B6EF6;
+    color: #EBE9FE;
+}
+.container-buttons {
+    background-color: #00000033;
+    max-width: max-content;
+}

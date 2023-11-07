@@ -1,0 +1,9 @@
+<div class="card-custom d-flex flex-column justify-content-center align-items-center py-2 px-1 rounded-3">
+    <div class="container-img">
+        <img class="rounded-3" src="https://image.tmdb.org/t/p/original{{dataOfMovie.backdrop_path}}" alt="imagen de pelicula o serie">
+    </div>
+    <div class="container-text justify-content-start text-white py-3 px-1 w-100">
+        <span class="text-start text-title-custom"> {{dataOfMovie.title ? dataOfMovie.title : dataOfMovie.name}} </span>
+        <!-- ternaria condicional (investigar) -->
+    </div>
+</div>

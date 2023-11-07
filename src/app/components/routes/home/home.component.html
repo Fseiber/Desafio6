@@ -1,0 +1,45 @@
+<div class="mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-start flex-column gap-3">
+                <div>
+                    <h1>PelisUP!</h1>
+                    <h6>Plataforma para ver peliculas y series 😊</h6>
+                </div>
+                <div class="mt-3">
+                    <app-search (handleSearchEvent)="searchFilm($event)"></app-search>
+                </div>
+                <div>
+                    <app-tab [active]="tabValue.value" (handleSelectOption)="getTabSelected($event)"
+                        [options]="optionsTab"></app-tab>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-12">
+            <div>
+                <app-tab-preview [tabLabelSelected]="tabValue.label" [size]="listFilms.length"></app-tab-preview>
+            </div>
+            <ng-container *ngIf="isLoading; else loaded">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="spinner-border text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </ng-container>
+            <ng-template #loaded>
+                <div class="w-100 d-flex align-items-center flex-wrap gap-4">
+                    <ng-container *ngFor="let movie of listFilms">
+                        <app-card [dataOfMovie]="movie"></app-card>
+                    </ng-container>
+                    <ng-container *ngIf="!listFilms.length">
+                        <p class="text-empty">No se encontraron resultados</p>
+                    </ng-container>
+                </div>
+            </ng-template>
+
+
+        </div>
+    </div>
+</div>
